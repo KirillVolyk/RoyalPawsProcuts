@@ -9,6 +9,6 @@
         public int OwnerId { get; set; } // Foreign key to Owner
 
         // Navigation: Many Pets to One Owner
-        public Owner Owner { get; set; }
+        public Owner? Owner { get; set; }
     }
 }
