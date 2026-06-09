@@ -1,6 +1,6 @@
 ﻿namespace RoyalPawsProcuts.Models
 {
-    public class Pets
+    public class Pet
     {
         public int PetId { get; set; } // Primary key
         public string PetName { get; set; }

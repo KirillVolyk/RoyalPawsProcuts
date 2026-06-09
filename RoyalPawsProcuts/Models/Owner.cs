@@ -11,6 +11,6 @@ namespace RoyalPawsProcuts.Models
         public string Email { get; set; }
 
         // Navigation: One Owner to Many Pets
-        public List<Pets>? Pet { get; set; } = new();
+        public List<Pet>? Pet { get; set; } = new();
     }
 }

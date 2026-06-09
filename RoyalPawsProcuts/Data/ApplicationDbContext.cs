@@ -9,5 +9,8 @@ namespace RoyalPawsProcuts.Data
             : base(options)
         {
         }
+
+        public DbSet<RoyalPawsProcuts.Models.Owner> Owners { get; set; }
+        public DbSet<RoyalPawsProcuts.Models.Pet> Pets { get; set; }
     }
 }
