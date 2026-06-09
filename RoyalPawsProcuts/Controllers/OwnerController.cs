@@ -30,7 +30,7 @@ namespace RoyalPawsProcuts.Controllers
         // to process the form and add new data
         // use [HttpPost] and bind
         [HttpPost]
-        public IActionResult Create([Bind("OwnerName, Phone, Email")] Owner owner)
+        public IActionResult Create([Bind("FullName, PhoneNumber, Email")] Owner owner)
         {
             if (!ModelState.IsValid)
                 return View(owner);
@@ -56,7 +56,7 @@ namespace RoyalPawsProcuts.Controllers
         // to process the form and update existing data
         // use [HttpPost] and bind
         [HttpPost]
-        public IActionResult Edit([Bind("OwnerId, OwnerName, Phone, Email")] Owner owner)
+        public IActionResult Edit([Bind("OwnerId, FullName, PhoneNumber, Email")] Owner owner)
         {
             if (!ModelState.IsValid)
                 return View(owner);
